@@ -4,7 +4,7 @@ cp vimrc ~/.vimrc
 echo "Copying vim folder"
 mkdir -p ~/.vim/bundle
 echo "Installing packages dependency"
-sudo pkg install vim git boost-all py36-boost-libs py36-powerline-status powerline-fonts
+sudo pkg install vim git boost-all py36-boost-libs py36-powerline-status powerline-fonts cmake
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim -c 'PluginInstall'
